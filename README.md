@@ -13,6 +13,9 @@ RULES
 4. If the player does not holds the rolled number is 1 then the added number in current box is reset to 0 and the control is passed to other player without effecting the total player number;
 5. If the player with control, holds the number then current box number is added to player total number(Top number);
 6. The players keeps playing until the player total number is 50;
-7. If the sum of player total number and current box's number is greater than 50 than the payer total nmber and current number is reset to 0 and the control is passed to other player;
+7. If the sum of player total number and current box's number is greater than 50 than the player control is passed to other player and the current box value is changed to 0;
 8. Once, one of the player get exactly 50 that player wins the game;
-9. And the game is ready to played again; 
+9. And the game is ready to played again;
+
+Other button function:
+  Player can start new game in middle of the game if the player is unhappy;
