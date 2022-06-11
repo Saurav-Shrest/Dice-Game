@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Game</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- https://i.imgur.com/m9mb3cx.png
+        https://i.imgur.com/EA2qvGZ.png
+        https://i.imgur.com/qaekzKO.png
+        https://i.imgur.com/qbqvQvB.png
+        https://i.imgur.com/vzksTKQ.png
+        https://i.imgur.com/eeBcrqU.png -->
+
+        <div class="image">
+            <img id="dice-img" src="Image/1.png" alt="dice">
+        </div>
+        <div class="new-game" id="new"><i class='bx bx-plus-circle'></i> New Game</div>
+        <div class=player-container>
+            <div class="left">
+                <div class="head">
+                    <h3>PLAYER 1 <span id="pl1" class="dot"></span></h3>
+                    <h2 id="pl1-count">0</h2>
+                </div>
+                <div class="bottom">
+                    <h6>CURRENT</h6>
+                    <h5 id="pl1-current-count">0</h5>
+                </div>
+            </div>
+            <div class="right">
+                <div class="head">
+                    <h3>PLAYER 2 <span id="pl2"></span></h3>
+                    <h2 id="pl2-count">0</h2>
+                </div>
+                <div class="bottom">
+                    <h6>CURRENT</h6>
+                    <h5 id="pl2-current-count">0</h5>
+                </div>
+            </div>
+        </div>
+        <div class="func">
+            <div id="roll-dice"><i class='bx bx-sync'></i> ROLL DICE</div>
+            <div id="hold"><i class='bx bx-arrow-to-bottom'></i> HOLD</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
