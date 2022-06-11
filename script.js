@@ -15,10 +15,8 @@ const hold = document.getElementById('hold');
 const imgContainer = document.querySelector('.image');
 const diceImg = document.getElementById('dice-img');
 
-let pl1Counter = 0;
-let pl2Counter = 0;
-
-
+let pl1CurrentCounter = 0;
+let pl2CurrentCounter = 0;
 
 rollDice.addEventListener('click', () => {
     let noRoll = Math.ceil(Math.random() * 6);
