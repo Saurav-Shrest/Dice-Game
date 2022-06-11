@@ -38,7 +38,7 @@ body {
 .image {
     width: 90px;
     height: 90px;
-    /* display: none; */
+    display: none;
     position: absolute;
     top: 40%;
     /* transform: translateX(-50%); */
@@ -119,9 +119,6 @@ body {
 #roll-dice:active, #hold:active {
     transform: scale(.9);
 }
-/* .shake {
-    transform: rotate(10deg);
-} */
 
 @media screen and (max-width: 1090px) {
     body {
