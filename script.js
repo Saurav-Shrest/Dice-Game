@@ -58,21 +58,21 @@ rollDice.addEventListener('click', () => {
         imgContainer.style.transform = `rotate(0deg)`;
         console.log(typeof(num))
         console.log(num)
-        // if(num == 1) {
-        //     if(player == 1) {
-        //         pl1CurrentCounter = 0;
-        //         pl1Current.innerText = pl1CurrentCounter;
-        //         // player = 2;
-        //         player1.classList.remove('dot');
-        //         player2.classList.add('dot');
-        //     }else {
-        //         pl2CurrentCounter = 0;
-        //         pl2Current.innerText = pl2CurrentCounter;
-        //         player = 1;
-        //         player2.classList.remove('dot');
-        //         player1.classList.add('dot');
-        //     }
-        // }else {
+        if(num == 1) {
+            if(player == 1) {
+                pl1CurrentCounter = 0;
+                pl1Current.innerText = pl1CurrentCounter;
+                // player = 2;
+                player1.classList.remove('dot');
+                player2.classList.add('dot');
+            }else {
+                pl2CurrentCounter = 0;
+                pl2Current.innerText = pl2CurrentCounter;
+                player = 1;
+                player2.classList.remove('dot');
+                player1.classList.add('dot');
+            }
+        }else {
             if(player == 1) {
                 pl1CurrentCounter += num;
                 pl1Current.innerText = pl1CurrentCounter;
@@ -80,7 +80,7 @@ rollDice.addEventListener('click', () => {
                 pl2CurrentCounter += num;
                 pl2Current.innerText = pl2CurrentCounter;
             }
-        // }
+        }
 
         if(pl1Total+pl1CurrentCounter > 50) {
             pl1Total = 0;
